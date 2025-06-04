@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def show_current_time():
-    # Получаем текущие дату и время
+
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    # Формируем HTML-страницу с данными
+
     return f'''
     <!DOCTYPE html>
     <html>
